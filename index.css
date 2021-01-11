@@ -9,6 +9,38 @@ a {
     text-decoration: none;
 }
 
+.about{
+    max-width: 1920px;
+    width: 100%;
+    background-image: url(assets/images/about/Holder.jpg);
+    height: 800px;
+}
+.container{
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+    
+}
+
+.products{
+    max-width: 1920px;
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.product{
+    
+    width: 25%;
+}
+
+.product-Chocolate{
+    background-image: url(Chocolate.png);
+    
+}
 
 /* Header */
 
