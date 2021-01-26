@@ -22,9 +22,30 @@
     font-style: normal;
 }
 
+@font-face{
+    font-family:'Muli-Italic' ;
+    src: url(../assets/fonts/Muli-Italic.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'Muli' ;
+    src: url(../assets/fonts/Muli.ttf) format('truetype');
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html,
 body {
     font-family:'Muli-Regular' sans-serif ;
+}
+
+a{
+    text-decoration: none;
 }
 /* header */
 .header{
@@ -42,10 +63,26 @@ body {
     justify-content:space-evenly;
 }
 
+.header__menu{
+    width: 540px;
+}
+
 .menu__list{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     list-style: none;
+    font-family: Muli-Bold;
+    font-size: 16px;
+    line-height: 2.5;
+    letter-spacing: 0.32px;
+    text-align: left;
+    text-transform: uppercase;
+    
+}
+
+.menu__link{
+    color: #ffffff;
 }
 
 .header__personal{
@@ -78,6 +115,15 @@ body {
     padding: 25px 39px 23px 38px;
     border-radius: 35px;
     background-color: #0aa566;
+    font-family: Muli;
+    font-size: 24px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+    text-align: left;
+    color: #ffffff;
 
     
 }
@@ -141,13 +187,59 @@ body {
 }
 
 .product{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 25%;
+    padding: 129px 0px 97px;
 }
 
-.product-Chocolate{
-    background-image: url(Chocolate.png);
+.product__сhocolate{
+    background-image: url(../assets/images/products/Chocolate.png);
     
+
+}
+
+.product_vegan{
+    background-image: url(../assets/images/products/HolderVegan.png);
+}
+
+.product__Lemon{
+    background-image: url(../assets/images/products/HolderLemon.png);
+}
+
+.product__Turmeric{
+    background-image: url(../assets/images/products/HolderTurmeric.png);
+}
+
+.product__caption{
+    font-size: 24px;
+    font-family: Muli-Bold;
+    line-height: 22px;
+    color:#ffffff;
+    padding-top: 35px;
+}
+
+.product__volume{
+    font-size: 21px;
+    font-family: Muli-Italic;
+    line-height: 32px;
+    color:#ffffff;
+    padding-bottom: 66px;
+    padding-top: 18px;
+
+}
+
+.product__btn{
+    font-family:'Muli-ExtraBold' ;
+    width: 200px;
+    height: 60px;
+    padding: 22px 0px 18px;
+    border-radius: 30px;
+    border: solid 2px #ffffff;
+    background-color: transparent;
+    color:#ffffff;
+
 }
 
 /* Header */
