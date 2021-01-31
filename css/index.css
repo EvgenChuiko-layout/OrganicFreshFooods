@@ -42,6 +42,7 @@
 html,
 body {
     font-family:'Muli-Regular' sans-serif ;
+    max-width: 1920px;
 }
 
 a{
@@ -61,6 +62,8 @@ a{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
+    align-items: center;
+    padding-top: 60px;
 }
 
 .header__menu{
@@ -97,6 +100,18 @@ a{
     list-style: none;
 }
 
+.header__personal::after{
+    content: "";
+    display: block;
+    width: 47px;
+    height: 2px;
+    background-color: #ffd68f;
+}
+
+.personal__link{
+    padding-right: 45px;
+}
+
 .social__list{
     display: flex;
     flex-direction: row;
@@ -107,6 +122,25 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 109px
+}
+.social__list-item{
+    padding-left: 15px;
+}
+
+.social__link{
+    background-color: #fff;
+    width:35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:50%;
+    text-align: center;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
 }
 
 .header__btn{
@@ -124,6 +158,8 @@ a{
     letter-spacing: -0.48px;
     text-align: left;
     color: #ffffff;
+    display: flex;
+    align-items: center;
 
     
 }
@@ -146,20 +182,57 @@ a{
 }
 
 .text{
-    font-family: Muli-Regular;
+    font-family: Muli;
     font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     color:#1e1e1e;
 }
 /* smoothies */
+
+.smoothies{
+    height: 870px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .smoothies__title{
-    text-align: center;
+    
 }
 
 .smoothies__text{
     width: 920px;
     text-align: center;
+    font-family: Muli;
+    line-height: 1.94;
+    letter-spacing: normal;
+    padding-bottom: 65px;
 }
 
+.smoothies__content{
+    display: grid;
+    grid-template-columns: 240px 265px 265px 240px;
+    grid-template-rows: 182px 182px;
+
+}
+
+.smoothies__item{
+    display: flex;
+    flex-direction: column;
+}
+
+.smoothies__desk{
+    font-family: Muli;
+    font-size: 25px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #f2612d;
+}
 /* about */
 .about{
     max-width: 1920px;
@@ -168,13 +241,10 @@ a{
     height: 800px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
-.container{
-    width: 100%;
-    max-width: 1720px;
-    margin: 0 auto;
-    
-}
+
+/* products */
 
 .products{
     max-width: 1920px;
@@ -182,7 +252,6 @@ a{
     height: 720px;
     display: flex;
     justify-content: space-between;
-    
     
 }
 
@@ -231,42 +300,316 @@ a{
 }
 
 .product__btn{
-    font-family:'Muli-ExtraBold' ;
     width: 200px;
-    height: 60px;
     padding: 22px 0px 18px;
-    border-radius: 30px;
     border: solid 2px #ffffff;
     background-color: transparent;
+    font-family: Muli;
+    font-size: 21px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.05;
+    letter-spacing: normal;
+    text-align: left;
     color:#ffffff;
 
 }
 
-/* Header */
-
-
-/* Smoothies */
-
-
-/* About */
-
-
-/* Products */
-
-
+.product__btn::after{
+    content: url(../assets/images/products/Arrow.png);
+}
 /* Story */
+
+.story{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 881px;
+    align-items: center;
+}
+.story__left-block{
+    display: flex;
+    flex-direction: column;
+    width: 511px;
+    height: 330px;
+}
+
+.story__btn{
+    width: 301px;
+    height: 60px;
+    padding: 21px 40px 22px 30px;
+    border-radius: 30px;
+    background-color: #0aa566;
+    font-family: Muli;
+    font-size: 24px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+    text-align: left;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.story__text{
+    width: 511px;
+    height: 118px;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: left;
+    padding: 60px 0px;
+}
 
 
 /* Testimonials */
 
+.testimonials{
+    background-image: url(../assets/images/testimonials/Holder.png);
+    width:1920px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 130px;
+
+}
+
+.testimonials__title{
+    width: 504px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.8;
+    letter-spacing: -1px;
+    text-align: center;
+    padding-bottom: 199px;
+}
+
+.testimonials__feedback{
+    display: flex;
+    
+}
+
+.testimonials__feedback::after{
+    content:"Sarah-A";
+    opacity: 0.6;
+    font-family: Muli;
+    font-size: 200px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.2;
+    letter-spacing: -4px;
+    text-align: center;
+    color: rgba(82, 25, 5, 0.6);
+}
+
+.testimonials__text{
+    width: 455px;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.testimonials__cite-author{
+    font-weight: 600;
+    font-style: italic;
+    line-height: 2.5;
+    color: #f7ae3b;
+    display: block;
+}
+
 
 /* Blog */
+
+.blog__container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.blog__subtitle{
+    width: 539px;
+    font-family: Muli;
+    font-size: 30px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #f2612d;
+}   
+
+.blog__subtitle::before{
+    content: "";
+    display: block;
+    width: 687px;
+    height: 12px;
+    background-color: #f7ae3b;
+}
+.blog__content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog__text{
+    width: 472px;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e1e1e;
+}
+
+.blog__date{
+    width: 94px;
+    font-family: Muli;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e1e1e;
+}
 
 
 /* Instagram */
 
+.instagram{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.instagram__link{
+    width:250px;
+    font-family: Muli;
+    font-size: 24px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+    text-align: left;
+    color: #0aa566;
+    padding-bottom: 50px;
+}
+
+.instagram__link::before{
+    content: url(../assets/images/instagram/instagramIcon1.png);
+}
+.instagram-content{
+    width:1920px;
+    display: flex;
+}
+
+.instagram__item::after{
+    content: url(../assets/images/instagram/instagramIcon_.png);
+
+}
+
 
 /* Footer */
+
+.footer__container{
+    background-image:url(../assets/images/footer/footerBg.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer__title{
+    width: 141px;
+    font-family: Muli;
+    font-size: 26px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer__list{
+    list-style-type: none;
+}
+
+.footer__list-link{
+    font-family: Muli;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.94;
+    letter-spacing: -0.36px;
+    text-align: left;
+    color: #6d450c;
+}
+
+.footer__copyright{
+    background-image: url(../assets/images/footer/footerBot.png);
+    width: 1920px;
+    height: 60px;
+    padding: 25px 164px 21px 869px;
+}
+
+.footer__small{
+    font-family: Muli;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.69;
+    letter-spacing: 0.26px;
+    text-align: center;
+    color: #af8a82;
+}
+
+.footer__bot-desc{
+    font-family: Muli;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.5;
+    letter-spacing: -0.32px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer__input{
+    width: 495px;
+    height: 60px;
+    padding: 21px 218px 20px 23px;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+
+.footer__social{
+    font-family: Muli;
+    font-size: 18px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.22;
+    letter-spacing: -0.36px;
+    text-align: left;
+    color: #6d450c;
+}
+
+.footer__description::after{
+    content:url(../assets/images/footer/HolderGo.png);
+    
+}
+
+
 
 
 
