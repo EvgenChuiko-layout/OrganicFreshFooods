@@ -1,0 +1,75 @@
+.products{
+    height: 720px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 25%;
+    /* width: 25%; */
+}
+
+.product__img{
+    margin: 128px 0px 39px;
+}
+
+.product__сhocolate{
+    background-image: url(../assets/images/products/Chocolate.png);
+    
+
+}
+
+.product_vegan{
+    background-image: url(../assets/images/products/HolderVegan.png);
+}
+
+.product__Lemon{
+    background-image: url(../assets/images/products/HolderLemon.png);
+}
+
+.product__Turmeric{
+    background-image: url(../assets/images/products/HolderTurmeric.png);
+}
+
+.product__caption{
+    font-size: 2.4rem;
+    font-family: Muli-Bold;
+    line-height: 22px;
+    color:#ffffff;
+}
+
+.product__volume{
+    font-size: 2.1rem;
+    font-family: Muli-Italic;
+    line-height: 32px;
+    color:#ffffff;
+    margin-bottom: 66px;
+    margin-top: 18px;
+
+}
+
+.product__btn{
+    width: 200px;
+    border: solid 2px #ffffff;
+    background-color: transparent;
+    font-family: Muli;
+    font-size: 2.1rem;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: normal;
+    text-align: left;
+    color:#ffffff;
+    padding-left: 34px;
+    position: relative;
+
+}
+
+.product__btn::after{
+    content: url(../assets/images/products/Arrow.png);
+    position: absolute;
+    left: 136px;
+}
