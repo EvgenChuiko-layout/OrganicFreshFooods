@@ -1,3 +1,5 @@
+//main: ./../main.less
+
 .products{
     height: 720px;
     display: flex;
@@ -72,4 +74,16 @@
     content: url(../assets/images/products/Arrow.png);
     position: absolute;
     left: 136px;
+}
+
+@media (max-width: 768px) {
+
+    .products{
+        overflow: auto;
+        min-height: 720px;
+    }
+
+    .product{
+        flex-basis: 60%;
+    }
 }

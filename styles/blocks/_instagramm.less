@@ -1,7 +1,10 @@
+//main: ./../main.less
+
 .instagram{
     display: flex;
     flex-direction: column;
     align-items:center;
+    
 }
 
 .instagram__link{
@@ -24,14 +27,19 @@
 }
 .instagram-content{
     display: flex;
+    width: 100%;
     column-gap: 2px;
 }
 
 .instagram__item{
     position: relative;
-    width: 384px;
-    height: 384px;
+    width: 20%;
 }
+
+.instagramm_img{
+    width: 100%;
+}
+
 .instagram__item::after{
     content: url(../assets/images/instagram/instagramIcon_.png);
     position: absolute;

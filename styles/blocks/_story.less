@@ -1,15 +1,17 @@
+//main: ./../main.less
+
 .story{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 881px;
+    min-height: 881px;
     align-items: center;
 }
 .story__left-block{
     display: flex;
     flex-direction: column;
-    width: 511px;
-    height: 330px;
+    max-width: 511px;
+    min-height: 330px;
     margin-right: 205px;
 }
 
@@ -48,4 +50,23 @@
     position: absolute;
     left: -168px;
     top: 22px;
+}
+
+@media(max-width: 768px){
+    
+    .story__img{
+        display: none;
+    }
+
+    
+    .story__left-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        width: 80%;
+        height: 100%;
+    }
+
 }
