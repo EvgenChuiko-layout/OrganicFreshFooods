@@ -82,3 +82,31 @@
 .testimonials__arrow-right{
     margin-left: 50px;
 }
+
+@media screen and (max-width: 768px) {
+    .testimonials::after{
+        display: none;
+    }
+
+
+.testimonials__img{
+    display: none;
+}
+
+.testimonials__feedback::after{
+    content: "Sarah-A";
+    opacity: .6;
+    font-family: Muli;
+    font-size: 14rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: .2;
+    letter-spacing: -4px;
+    text-align: center;
+    color: rgba(82,25,5,0.6);
+    position: absolute;
+    width: 100%;
+    left: 10px;
+}
+}

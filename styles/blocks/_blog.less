@@ -4,6 +4,7 @@
     min-height: 798px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .blog__title{
@@ -72,4 +73,18 @@
     text-align: left;
     color: #1e1e1e;
     margin:0px 0px 50px 60px;
+}
+
+@media screen and (max-width: 1168px) {
+    .blog__content{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog__content{
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
 }

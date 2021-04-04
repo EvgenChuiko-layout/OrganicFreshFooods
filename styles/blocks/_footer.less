@@ -92,9 +92,19 @@
     align-items:center;
     margin: 27px 0px 0px 184px;
 }
+
 .footer__description{
     position: relative;
+    font-family: Muli;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 2.22;
+    letter-spacing: -0.36px;
+    text-align: left;
+    color: #6d450c;
+    text-transform: uppercase;
 }
+
 .footer__description::before{
     content: url(../assets/images/footer/FollowArrow.png);
     position: absolute;
@@ -142,4 +152,46 @@
     position: absolute;
     right: -35px;
     top: -20px;
+}
+
+@media screen and (max-width:768px) {
+
+    .footer__container{
+        padding: 30px 20px 40px; 
+        flex-direction: column;
+        min-height: 963px;
+    }
+
+    .footer__list{
+        display: flex;
+        
+    }
+
+    .footer__title{
+        font-size: 4.0rem;
+        margin: 35px 0px;
+    }
+
+    .footer__list-link{
+        font-size: 2.3rem;
+        margin: 0px 10px;
+    }
+
+    .footer__payment-box{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        width: 100%;
+    }
+    
+
+    .footer__subscribe{
+        margin-bottom: 30px;
+    }
+
+    .footer__description{
+        font-size: 2.3rem;    }
+
+
+
 }
