@@ -75,7 +75,7 @@
     margin:0px 0px 50px 60px;
 }
 
-@media screen and (max-width: 1168px) {
+@media screen and (max-width: 1200px) {
     .blog__content{
         flex-direction: column;
         padding-bottom: 30px;
@@ -86,5 +86,30 @@
     .blog__content{
         flex-direction: column;
         padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .blog{
+        min-height: 690px;
+    }
+    .blog__img{
+        display: none;
+    }
+
+    .blog__title{
+        text-align: center;
+        margin: 50px 0px 0px;
+    }
+
+    .blog__subtitle{
+        margin: 70px 0px 20px 10px;
+    }   
+    .blog__text{
+        max-width: 85%;
+        text-align: left;
+        margin-left: 0px;
+        padding-left: 10px;
     }
 }

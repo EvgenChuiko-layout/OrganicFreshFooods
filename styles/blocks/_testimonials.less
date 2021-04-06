@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    height: 720px;
+    min-height: 720px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -109,4 +109,39 @@
     width: 100%;
     left: 10px;
 }
+}
+
+@media screen and (max-width: 320px) {
+
+    .testimonials{
+        padding-top: 80px;
+        height: 100%;
+    }
+
+    .testimonials::after{
+        display: none;
+    }
+
+    .testimonials__img{
+        display: none;
+    }
+
+.testimonials__feedback::after{
+    display: none;
+}
+
+.testimonials__title{
+    width: 85%;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.testimonials__text{
+    width: 85%;
+    line-height: 1.94;
+}
+
 }

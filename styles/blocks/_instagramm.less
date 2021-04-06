@@ -23,7 +23,7 @@
     content: url(../assets/images/instagram/instagramIcon1.png);
     position: absolute;
     left:-30px;
-    top:7px;
+    top:2px;
 }
 .instagram-content{
     display: flex;
@@ -65,4 +65,16 @@
         
 }
 
+@media screen and (max-width: 320px){
+    .instagram__link{
+        font-size: 3.6rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
+    .instagram__link::before{
+        left: 4%;
+        top: -28px;
+}
+
+}
