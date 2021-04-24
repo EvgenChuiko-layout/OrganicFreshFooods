@@ -1,13 +1,14 @@
 //main: ./../main.less
 
 .smoothies{
-    height: 870px;
+    min-height: 870px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 112px;
 }
 .smoothies__title{
-    margin: 112px 0px 68px;
+    margin: 0px 0px 68px;
 }
 
 .smoothies__text{
@@ -26,13 +27,28 @@
     align-items: center;
     row-gap: 2px;
     column-gap: 2px;
-    /* background-color:#f6edde; */
 }
 
 .smoothies__item{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.smoothies__item:hover{
+    animation: flip-vertical-bck 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes flip-vertical-bck {
+    0% {
+        transform: translateZ(0) rotateY(0) scale(1.3);
+    }
+    50% {
+        transform: translateZ(-260px) rotateY(-180deg) scale(1.3);
+    }
+    100% {
+        transform: translateZ(0) rotateY(0) scale(1.3);
+    }
 }
 
 .smoothies__desk{
@@ -66,6 +82,8 @@
 }
 
 @media (max-width: 320px) {
-
-    grid-template-columns:  160px 160px;
+    .smoothies__content{
+        grid-template-columns:  160px 160px;
+        grid-template-rows:150px 190px 150px 190px;
+    }
 }

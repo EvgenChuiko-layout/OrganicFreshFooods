@@ -1,7 +1,6 @@
 //main: ./../main.less
 
 .about{
-    width: 100%;
     background-image:url(../assets/images/about/Holder.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -21,6 +20,7 @@
 
 .about__right{
     margin-left: 140px;
+    padding-top: 111px;
 }
 
 .about__title{
@@ -31,7 +31,7 @@
     letter-spacing: -1.1px;
     text-align: left;
     color: #ffffff;
-    margin: 111px 0px 72px;
+    margin: 0px 0px 72px;
     max-width: 580px;
 }
 
@@ -84,8 +84,22 @@
     color: #ffffff;
 }
 
+.about__btn:hover{
+    background-color:#006d5b;
+    font-size: 2.3rem;
+}
 .btn__arrow-yellow{
     margin-left: 30px;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s infinite alternate both;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 @media (max-width: 1200px) {
@@ -106,6 +120,10 @@
 
     .about__img{
         display: none;
+    }
+
+    .about__right{
+        margin-left: 96px;
     }
 
     .about__title{

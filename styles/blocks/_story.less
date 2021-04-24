@@ -28,8 +28,24 @@
     padding-left: 30px;
 }
 
+.story__btn:hover{
+    background-color: #0d8656;
+    font-size: 2.6rem;
+    border: 3px solid #077247;
+}
+
 .story__btn__arrow-yellow{
     margin-left: 76px;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s infinite alternate both;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 .story__text{
